@@ -1,0 +1,227 @@
+.profile-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 24px;
+  color: #fff;
+}
+
+.profile-back-button {
+  background: none;
+  border: none;
+  color: var(--primary-neon);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0;
+  margin-bottom: 24px;
+  transition: transform 0.2s;
+}
+
+.profile-back-button:hover {
+  transform: translateX(-4px);
+}
+
+.profile-header-card {
+  padding: 32px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 30px;
+  background: rgba(13, 17, 29, 0.4);
+  border: 1px solid var(--card-border);
+  flex-wrap: wrap;
+}
+
+.profile-avatar-container {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: rgba(6, 182, 212, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--primary-neon);
+  overflow: hidden;
+}
+
+.profile-avatar-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-name-container {
+  flex: 1;
+  min-width: 200px;
+}
+
+.profile-name {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.profile-badge-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+  flex-wrap: wrap;
+}
+
+.profile-role-badge {
+  color: #000;
+  font-weight: 700;
+  font-size: 0.72rem;
+  padding: 2px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.profile-member-since {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.profile-status-badge {
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.profile-grid {
+  display: grid;
+  gap: 30px;
+}
+
+.profile-details-card {
+  padding: 24px;
+  border-radius: 16px;
+  background: rgba(13, 17, 29, 0.2);
+  border: 1px solid var(--card-border);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.profile-section-heading {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  border-bottom: 1px solid var(--card-border);
+  padding-bottom: 10px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.profile-fields-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.profile-field-label {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  display: block;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.profile-field-value {
+  font-size: 0.92rem;
+  font-weight: 500;
+}
+
+.profile-field-value-flex {
+  font-size: 0.92rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.profile-credentials-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.profile-fee-text {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--secondary-neon);
+}
+
+.profile-bio-text {
+  font-size: 0.88rem;
+  color: #e5e7eb;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.profile-coordinates-text {
+  font-size: 0.8rem;
+  color: #e5e7eb;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.profile-gov-id-section {
+  margin-top: 10px;
+  padding-top: 14px;
+  border-top: 1px solid var(--card-border);
+}
+
+.profile-gov-id-image-wrapper {
+  width: 100%;
+  height: 140px;
+  border-radius: 8px;
+  border: 1px solid var(--card-border);
+  overflow: hidden;
+  background: #000;
+  position: relative;
+}
+
+.profile-gov-id-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.profile-gov-id-link {
+  color: var(--primary-neon);
+  font-size: 0.78rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+}
+
+.profile-gov-id-file-btn {
+  background: rgba(6, 182, 212, 0.1);
+  border: 1px solid rgba(6, 182, 212, 0.3);
+  border-radius: 8px;
+  color: var(--primary-neon);
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  text-decoration: none;
+  font-weight: 600;
+  width: fit-content;
+}

@@ -1,0 +1,233 @@
+.doc-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 24px;
+}
+
+.doc-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.doc-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.doc-subtitle {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+.doc-refresh-btn {
+  background: none;
+  border: 1px solid var(--card-border);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.doc-error-panel {
+  background: rgba(244, 63, 94, 0.1);
+  border: 1px solid var(--accent-alert);
+  border-radius: 8px;
+  padding: 16px;
+  color: var(--accent-alert);
+  margin-bottom: 20px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.doc-tabs {
+  display: flex;
+  gap: 8px;
+  border-bottom: 1px solid var(--card-border);
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  padding-bottom: 4px;
+}
+
+.doc-tab {
+  background: none;
+  border: none;
+  padding: 12px 16px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.doc-patient-records {
+  padding: 24px;
+}
+
+.doc-patient-title {
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.doc-patients-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.doc-patient-card {
+  background: rgba(0,0,0,0.15);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.doc-patient-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: rgba(255,255,255,0.05);
+}
+
+.doc-patient-name {
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.doc-patient-phone {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+}
+
+.doc-patient-summary {
+  color: var(--primary-neon);
+  font-size: 0.72rem;
+  margin-top: 4px;
+  font-weight: 600;
+}
+
+.doc-appt-empty {
+  padding: 40px;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.doc-appt-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.doc-appt-card {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.doc-appt-patient-info {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.doc-appt-patient-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: rgba(255,255,255,0.05);
+}
+
+.doc-appt-patient-name {
+  font-size: 1.05rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.doc-appt-patient-meta {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-top: 4px;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+}
+
+.doc-appt-slot {
+  display: flex;
+  flex-direction: column;
+}
+
+.doc-appt-slot-label {
+  display: block;
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.doc-appt-slot-val {
+  font-size: 0.82rem;
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.doc-payment-status {
+  display: flex;
+  flex-direction: column;
+}
+
+.doc-payment-val {
+  font-size: 0.82rem;
+  color: var(--secondary-neon);
+}
+
+.doc-validity-status {
+  display: flex;
+  flex-direction: column;
+}
+
+.doc-actions-col {
+  display: flex;
+  align-items: center;
+}
+
+.doc-consult-btn {
+  background: var(--primary-neon);
+  border: none;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.8rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 4px 12px rgba(6, 182, 212, 0.25);
+}

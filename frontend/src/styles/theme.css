@@ -1,0 +1,32 @@
+:root {
+  --color-bg: #0a0b10;            /* dark background */
+  --color-surface: #11131a;       /* cards, panels */
+  --color-primary: #0ff;          /* neon cyan */
+  --color-primary-dark: #0891b2;  /* darker accent */
+  --color-secondary: #82c91e;     /* secondary accent */
+  --color-text-primary: #e5e7eb;  /* light text */
+  --color-text-muted: #9ca3af;    /* muted text */
+  --color-border: rgba(255,255,255,0.08);
+  --color-accent-alert: #f43f5e;
+  /* Semantic aliases */
+  --bg-dark: var(--color-bg);
+  --bg-surface: var(--color-surface);
+  --primary-neon: var(--color-primary);
+  --secondary-neon: var(--color-secondary);
+  --text-primary: var(--color-text-primary);
+  --text-muted: var(--color-text-muted);
+  --card-glass: rgba(17, 24, 39, 0.55);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-bg: #f9fafb;
+    --color-surface: #ffffff;
+    --color-primary: #0891b2;
+    --color-primary-dark: #0ff;
+    --color-secondary: #10b981;
+    --color-text-primary: #111827;
+    --color-text-muted: #6b7280;
+    --color-border: rgba(0,0,0,0.1);
+  }
+}

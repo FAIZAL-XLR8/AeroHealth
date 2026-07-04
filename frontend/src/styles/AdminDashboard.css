@@ -1,0 +1,551 @@
+.admin-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 24px;
+  font-family: Outfit, sans-serif;
+  color: #fff;
+}
+
+.admin-header {
+  padding: 30px;
+  margin-bottom: 30px;
+  background: linear-gradient(135deg, rgba(13, 17, 29, 0.75) 0%, rgba(22, 28, 45, 0.75) 100%);
+  border: 1px solid rgba(244, 63, 94, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  borderRadius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.admin-header-title-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.admin-header-icon {
+  color: #f43f5e;
+}
+
+.admin-header-title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0;
+  background: linear-gradient(to right, #ffffff, #f43f5e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.admin-header-desc {
+  color: var(--text-muted);
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.admin-stats-row {
+  display: flex;
+  gap: 15px;
+}
+
+.admin-stat-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  padding: 12px 18px;
+  text-align: center;
+}
+
+.admin-stat-number {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.admin-stat-label {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.admin-error-banner {
+  background: rgba(244, 63, 94, 0.1);
+  border: 1px solid rgba(244, 63, 94, 0.25);
+  color: var(--accent-alert);
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.admin-loading-container {
+  text-align: center;
+  padding: 80px 0;
+}
+
+.admin-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(244,63,94,0.1);
+  border-top-color: #f43f5e;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 20px auto;
+}
+
+.admin-loading-text {
+  color: var(--text-muted);
+}
+
+.admin-sections-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.admin-section-heading {
+  font-size: 1.25rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.admin-section-heading-archive {
+  font-size: 1.1rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.admin-empty-state {
+  padding: 30px;
+  text-align: center;
+  color: var(--text-muted);
+  border-style: dashed;
+}
+
+.admin-pending-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.admin-approved-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.admin-archived-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.admin-flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.admin-divider {
+  border: none;
+  border-top: 1px solid var(--card-border);
+  margin: 0;
+}
+
+.admin-verified-badge {
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-weight: 700;
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--secondary-neon);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.admin-info-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.admin-action-button {
+  flex: 1;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: all 0.2s;
+}
+
+.admin-input {
+  flex: 1;
+  background: rgba(0,0,0,0.2);
+  border: 1px solid var(--card-border);
+  border-radius: 6px;
+  padding: 10px;
+  color: #fff;
+  font-size: 0.8rem;
+  outline: none;
+}
+
+.admin-suspension-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.admin-suspension-modal-card {
+  background: linear-gradient(135deg, rgba(13, 17, 29, 0.95) 0%, rgba(22, 28, 45, 0.95) 100%);
+  border: 1px solid rgba(234, 179, 8, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 16px;
+  max-width: 500px;
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.admin-suspension-modal-title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin: 0 0 8px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.admin-suspension-modal-subtitle {
+  font-size: 0.95rem;
+  color: #94a3b8;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.admin-suspension-textarea-group {
+  margin-bottom: 20px;
+}
+
+.admin-suspension-label {
+  display: block;
+  font-size: 0.78rem;
+  color: #94a3b8;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+
+.admin-suspension-textarea {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 12px;
+  color: #fff;
+  font-size: 0.9rem;
+  font-family: inherit;
+  outline: none;
+  resize: none;
+  box-sizing: border-box;
+}
+
+.admin-suspension-modal-footer {
+  display: flex;
+  gap: 12px;
+  marginTop: 24px;
+}
+
+.admin-suspension-btn-cancel {
+  flex: 1;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: #94a3b8;
+  padding: 12px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.admin-suspension-btn-confirm {
+  flex: 1;
+  border: none;
+  border-radius: 8px;
+  color: #000;
+  padding: 12px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.admin-pending-card {
+  padding: 24px;
+  background: rgba(17, 24, 39, 0.85);
+  border: 1px solid rgba(6, 182, 212, 0.15);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.admin-pending-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.admin-pending-profile-row {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.admin-pending-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  object-fit: cover;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--card-border);
+}
+
+.admin-pending-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 4px 0;
+}
+
+.admin-pending-specialty-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-size: 0.78rem;
+  align-items: center;
+}
+
+.admin-pending-specialty {
+  color: var(--primary-neon);
+  background: rgba(6, 182, 212, 0.1);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.admin-pending-address {
+  color: var(--text-muted);
+  font-size: 0.74rem;
+}
+
+.admin-pending-badges {
+  display: flex;
+  gap: 12px;
+  align-self: flex-start;
+  margin-left: auto;
+}
+
+.admin-pending-details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  font-size: 0.82rem;
+}
+
+.admin-pending-detail-icon {
+  color: var(--text-muted);
+}
+
+.admin-pending-gov-icon {
+  color: var(--secondary-neon);
+}
+
+.admin-pending-doc-link {
+  color: var(--secondary-neon);
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.admin-pending-doc-missing {
+  color: var(--accent-alert);
+}
+
+.admin-pending-actions-col {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.admin-pending-actions-row {
+  display: flex;
+  gap: 12px;
+}
+
+.admin-pending-btn-approve {
+  background: var(--secondary-neon);
+  color: #fff;
+}
+
+.admin-pending-btn-approve:hover {
+  opacity: 0.9;
+}
+
+.admin-pending-btn-reject-toggle {
+  background: rgba(244, 63, 94, 0.1);
+  color: var(--accent-alert);
+  border: 1px solid rgba(244, 63, 94, 0.3);
+}
+
+.admin-pending-btn-reject-toggle:hover {
+  background: rgba(244, 63, 94, 0.15);
+}
+
+.admin-pending-reject-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  animation: fadeIn 0.2s;
+}
+
+.admin-pending-reject-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.admin-pending-reject-row {
+  display: flex;
+  gap: 10px;
+}
+
+.admin-pending-btn-reject-submit {
+  background: var(--accent-alert);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.admin-mini-card {
+  padding: 16px;
+  background: rgba(255,255,255,0.01);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-mini-profile-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.admin-mini-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.admin-mini-name {
+  font-size: 0.92rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.admin-mini-subtitle {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+.admin-mini-btn-suspend {
+  background: none;
+  border: 1px solid rgba(234, 179, 8, 0.3);
+  border-radius: 6px;
+  color: #eab308;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.admin-mini-btn-suspend:hover {
+  background: rgba(234,179,8,0.1);
+}
+
+.admin-archive-card {
+  padding: 12px 14px;
+  background: rgba(255, 255, 255, 0.01);
+  border: 1px solid rgba(255,255,255,0.04);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.admin-archive-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-archive-name {
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.admin-archive-btn-reapprove {
+  background: none;
+  border: none;
+  color: var(--secondary-neon);
+  font-size: 0.7rem;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 2px 6px;
+  text-decoration: underline;
+}
+
+.admin-archive-subtitle {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+.admin-archive-reason {
+  font-size: 0.7rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+}

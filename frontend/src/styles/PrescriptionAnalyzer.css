@@ -1,0 +1,345 @@
+.rx-container {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+  z-index: 10;
+}
+
+.rx-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rx-title {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 800;
+  font-family: 'Outfit';
+}
+
+.rx-subtitle {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.rx-console-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.rx-auth-card {
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.rx-auth-icon-wrapper {
+  background: rgba(244, 63, 94, 0.1);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.rx-auth-title {
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.rx-auth-desc {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-top: 6px;
+  max-width: 360px;
+}
+
+.rx-auth-btn {
+  background: var(--primary-neon);
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(6, 182, 212, 0.25);
+}
+
+.rx-upload-form {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-style: dashed;
+  border-width: 2px;
+  max-width: 550px;
+  width: 100%;
+  margin: 40px auto 0;
+}
+
+.rx-upload-icon-wrapper {
+  background: rgba(6, 182, 212, 0.1);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.rx-upload-text-wrapper {
+  text-align: center;
+}
+
+.rx-upload-label-main {
+  color: var(--primary-neon);
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.rx-upload-label-sub {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  display: block;
+  margin-top: 4px;
+}
+
+.rx-selected-doc-badge {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+.rx-submit-btn {
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rx-result-card {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.rx-result-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--card-border);
+  padding-bottom: 16px;
+}
+
+.rx-result-label {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.rx-result-title {
+  font-size: 1.25rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.rx-result-clear-btn {
+  background: none;
+  border: 1px solid var(--card-border);
+  border-radius: 6px;
+  color: var(--text-muted);
+  font-size: 0.72rem;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.rx-med-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.rx-med-list-title {
+  font-size: 0.95rem;
+  color: #fff;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rx-med-empty-state {
+  padding: 20px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.01);
+  border-radius: 8px;
+  border: 1px solid var(--card-border);
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.rx-med-card {
+  padding: 24px;
+  background: rgba(0, 0, 0, 0.15);
+  border-color: rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.rx-med-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.rx-med-icon-wrapper {
+  background: rgba(6, 182, 212, 0.1);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rx-med-name {
+  font-size: 1.05rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.rx-med-details-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 20px;
+}
+
+.rx-med-info-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rx-med-info-label {
+  font-size: 0.7rem;
+  color: var(--primary-neon);
+  font-weight: 600;
+  display: block;
+  text-transform: uppercase;
+}
+
+.rx-med-info-val {
+  font-size: 0.85rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.rx-med-info-desc {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.rx-med-safety-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid var(--card-border);
+}
+
+.rx-med-safety-label-green {
+  font-size: 0.7rem;
+  color: var(--secondary-neon);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.rx-med-safety-label-red {
+  font-size: 0.7rem;
+  color: var(--accent-alert);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.rx-med-safety-list {
+  margin: 0;
+  padding-left: 14px;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.rx-overall-advice-panel {
+  background: rgba(6, 182, 212, 0.05);
+  border: 1px solid rgba(6, 182, 212, 0.2);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.rx-overall-advice-label {
+  font-size: 0.7rem;
+  color: var(--primary-neon);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.rx-overall-advice-desc {
+  font-size: 0.82rem;
+  color: var(--text-primary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.rx-overall-advice-disclaimer {
+  margin-top: 4px;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
