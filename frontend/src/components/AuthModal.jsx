@@ -753,7 +753,7 @@ const AuthModal = ({ isOpen, onClose, onSuccess }) => {
                     {isSuspended && (
                       <span
                         style={{ color: '#f87171', textDecoration: 'underline', cursor: 'pointer', marginLeft: '5px', fontWeight: 'bold' }}
-                        onClick={() => window.open(`/api/auth/suspension-details/${email.toLowerCase().trim()}`, '_blank')}
+                        onClick={() => window.open(apiUrl(`/api/auth/suspension-details/${email.toLowerCase().trim()}`), '_blank')}
                       >
                         See reasons for suspension
                       </span>
